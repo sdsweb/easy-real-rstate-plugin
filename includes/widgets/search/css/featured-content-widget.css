@@ -1,0 +1,65 @@
+/*
+ * Featured Content Stylesheet
+ */
+
+/* Generic Styles */
+.featured-content-clear {
+	height: 0;
+	font-size: 0;
+	clear: both;
+}
+
+/* Large */
+.featured-content-widget-large {
+	width: 100%;
+	margin: 1em 0;
+	overflow: auto;
+}
+
+.featured-content-widget-large .thumbnail {
+	width: 50%;
+	margin: 0;
+	padding: 0;
+	float: left;
+	overflow: hidden;
+}
+
+.featured-content-widget-large .content-has-post-thumbnail {
+	width: 50%;
+	float: left;
+}
+
+/* Medium */
+.featured-content-widget-medium {
+	width: 48%;
+	margin: 1em 0;
+	padding: 1%;
+	float: left;
+}
+
+.featured-content-widget-medium .thumbnail {
+	width: 50%;
+	margin: 0;
+	padding: 0;
+	float: left;
+	overflow: hidden;
+}
+
+.featured-content-widget-medium .content-has-post-thumbnail {
+	width: 50%;
+	float: left;
+}
+
+/* Small */
+.featured-content-widget-small {
+	width: 23%;
+	margin: 1em 0;
+	padding: 1%;
+	float: left;
+}
+
+.featured-content-widget-small .thumbnail {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
