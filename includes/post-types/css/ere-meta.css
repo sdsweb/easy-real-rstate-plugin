@@ -1,0 +1,127 @@
+/*
+ * Description: Easy Real Estate Admin Stylesheet - used on admin pages to format custom post meta
+ * Version: 1.0
+ */
+
+/* Clear floats */
+.ere-clear {
+	height: 0;
+	font-size: 0;
+	clear: both;
+}
+
+/* Section */
+.ere-section {
+	margin: 15px 0 30px;
+	padding: 0 0 30px;
+	border-bottom: 1px solid #c6c6c6;
+}
+
+.ere-section-no-border {
+	margin: 15px 0 30px;
+	padding: 0;
+	border-bottom: none;
+}
+
+	/* Main section labels */
+	.ere-section-label {
+		margin: 2px 0 5px;
+		font-size: 18px;
+		font-weight: normal;
+		float: left;
+	}
+
+	.ere-section-sub-label{
+		margin-top: 20px;
+	}
+
+	.ere-section-description {
+		margin-bottom: 10px;
+		display: block;
+		float: right;
+	}
+
+	.ere-section-sub-description{
+		margin-top: 20px;
+	}
+
+/* Sub sections */
+.ere-sub-section {
+	margin: 5px 0 0;
+	padding: 10px 10px 0;
+	background: #fff;
+	border: 1px solid #ddd;
+}
+	/* Last input area in sub section */
+	.ere-last {
+		margin-bottom: 5px !important;
+	}
+
+	/* Sub section containers */
+	.ere-label-container {
+		width: 44%;
+		margin: 0 20px 20px 0;
+		float: left;
+	}
+
+		.ere-label{
+			display: block;
+		}
+
+		.ere-checkbox-label {
+			margin-top: -1px;
+			display: block;
+		}
+
+		.ere-description {
+			font-size: 11px !important;
+		}
+
+		/* Green link */
+		.ere-link {
+			color: #63a62f;
+		}
+
+	.ere-input-container  {
+		width: 52%;
+		margin: 0 0 20px 0;
+		float: left;
+	}
+
+	.ere-checkbox-container  {
+		width: 100%;
+		margin: 0 0 20px 0;
+		float: left;
+	}
+
+	/* Full width container */
+	.ere-full-width {
+		width: 100% !important;
+		margin: 0 0 20px;
+	}
+
+		.ere-input {
+			width: 100%;
+		}
+
+			#_ere_listing_meta_address_city {
+				width: 84%;
+				float: left;
+			}
+
+			#_ere_listing_meta_address_state {
+				margin-left: 9px;
+			}
+
+		.ere-textarea {
+			width: 100%;
+		}
+
+		.ere-input-table-hours {
+			float: right;
+		}
+
+		.ere-checkbox, input[type="checkbox"].ere-checkbox {
+			margin: 0 10px 0 0;
+			float: left;
+		}

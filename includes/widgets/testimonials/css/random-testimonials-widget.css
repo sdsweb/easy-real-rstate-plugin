@@ -1,0 +1,37 @@
+/*
+ * Random Testimonials Stylesheet
+ */
+
+.testimonials-clear {
+	height: 0;
+	font-size: 0;
+	clear: both;
+}
+
+/* Used when more than 1 testimional is selected */
+.testimonial-2-col {
+	width: 50%;
+	float: left;
+}
+
+.testimonial-has-post-thumbnail .testimonial {
+	width: 66%;
+	margin-left: 2%;
+	float: left;
+	clear: none;
+}
+
+.testimonial-featured-image {
+	width: 28%;
+	float: left;
+}
+
+.testimonial-featured-image img {
+	max-width: 100%;
+	height: auto;
+}
+
+.testimonial-featured-image img {
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
