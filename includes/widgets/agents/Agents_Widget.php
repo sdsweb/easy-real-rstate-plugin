@@ -105,6 +105,7 @@ if( ! class_exists( 'Agents_Widget' ) ) {
 			// Display featured content
 			if ( $ere_agents_query->have_posts() ) :
 		?>
+				<section class="ere-agents agents-clear"></section>
 				<section class="agents-widget agents">
 					<?php while ( $ere_agents_query->have_posts() ) : $ere_agents_query->next_post(); ?>
 						<section class="agent">
