@@ -28,7 +28,7 @@ if( ! class_exists( 'Search_Widget' ) ) {
 		function __construct() {
 			$widget_options = array( 'classname' => 'ere-search-widget search-widget', 'description' => 'Displays a search widget based on settings.' );
 			$control_options = array( 'width' => 200, 'height' => 350, 'id_base' => 'search-widget' );
-			self::WP_Widget( 'search-widget', 'Property Search', $widget_options, $control_options );
+			parent::__construct( 'search-widget', 'Property Search', $widget_options, $control_options );
 		}
 
 

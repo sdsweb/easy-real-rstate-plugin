@@ -28,7 +28,7 @@ if( ! class_exists( 'Random_Testimonials_Widget' ) ) {
 		function __construct() {
 			$widget_options = array( 'description' => 'Displays random testimonials based on settings.' );
 			$control_options = array( 'width' => 200, 'height' => 350, 'id_base' => 'random-testimonials-widget' );
-			self::WP_Widget( 'random-testimonials-widget', 'Random Testimonials', $widget_options, $control_options );
+			parent::__construct( 'random-testimonials-widget', 'Random Testimonials', $widget_options, $control_options );
 
 			add_action( 'wp_enqueue_scripts', array( $this, 'wp_enqueue_scripts' ) ); // Enqueue CSS
 		}

@@ -5,7 +5,7 @@
  * Description: A plugin from Slocum Design Studio to add Real Estate functionality to our Modern Real Estate theme.
  * Author: Slocum Design Studio
  * Author URI: http://www.slocumstudio.com
- * Version: 1.0.1
+ * Version: 1.0.2
  * License: GPL2+
  * License URI: http://www.gnu.org/licenses/gpl.html
 
@@ -13,7 +13,7 @@
  * Easy Real Estate WordPress plugin is licensed under the GPL.
  */
 
-define( 'ERE_VERSION', '1.0.1' ); // Version
+define( 'ERE_VERSION', '1.0.2' ); // Version
 define( 'ERE_PLUGIN_FILE', __FILE__ ); // Reference to this plugin file
 define( 'ERE_PLUGIN_DIR', plugin_dir_path( __FILE__ ) ); // Plugin directory path
 define( 'ERE_PLUGIN_URL', trailingslashit( plugins_url( '' , __FILE__ ) ) ); // Plugin url

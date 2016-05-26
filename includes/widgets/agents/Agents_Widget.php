@@ -28,7 +28,7 @@ if( ! class_exists( 'Agents_Widget' ) ) {
 		function __construct() {
 			$widget_options = array( 'classname' => 'ere-agents-widget agents-widget', 'description' => 'Displays agent featured images based on settings.' );
 			$control_options = array( 'width' => 200, 'height' => 350, 'id_base' => 'agents-widget' );
-			self::WP_Widget( 'agents-widget', 'Agents', $widget_options, $control_options );
+			parent::__construct( 'agents-widget', 'Agents', $widget_options, $control_options );
 
 			add_action( 'wp_enqueue_scripts', array( $this, 'wp_enqueue_scripts' ) ); // Enqueue CSS
 		}

@@ -28,7 +28,7 @@ if( ! class_exists( 'Featured_Content_Widget' ) ) {
 		function __construct() {
 			$widget_options = array( 'classname' => 'ere-featured-content-widget featured-content-widget', 'description' => 'Displays featured content based on settings.' );
 			$control_options = array( 'width' => 200, 'height' => 350, 'id_base' => 'featured-content-widget' );
-			self::WP_Widget( 'featured-content-widget', 'Featured Content', $widget_options, $control_options );
+			parent::__construct( 'featured-content-widget', 'Featured Content', $widget_options, $control_options );
 
 			add_action( 'admin_enqueue_scripts', array( $this, 'admin_enqueue_scripts' ) ); // Enque admin scripts
 			add_action( 'wp_enqueue_scripts', array( $this, 'wp_enqueue_scripts' ) ); // Enqueue CSS
@@ -344,11 +344,11 @@ if( ! class_exists( 'Featured_Content_Widget' ) ) {
 					$ere_term_details = explode( '-', $instance['content_type'], 3 ); // Limit 3
 					$content_type_count = get_term_by( 'slug', $ere_term_details[2], $ere_term_details[1] )->count;
 					$ere_featured_content_args['post_type'] = 'ere_properties';
-					$ere_featured_content_args['tax_query'] =array(
+					$ere_featured_content_args['tax_query'] = array( array(
 						'taxonomy' => $ere_term_details[1],
 						'field' => 'slug',
 						'terms' => $ere_term_details[2]
-					);
+					) );
 				}
 
 				// If a posts should be excluded (and none to be included)
