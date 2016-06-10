@@ -26,12 +26,12 @@
 						$ere_map_url_params .= ( ! empty( $ere_property_address_city ) ) ? urlencode( $ere_property_address_city ) . '+,' : false; // City
 						$ere_map_url_params .= ( ! empty( $ere_property_address_state ) ) ? urlencode( $ere_property_address_state ) . '+' : false; // State
 						$ere_map_url_params .= ( ! empty( $ere_property_address_zip_code ) ) ? urlencode( $ere_property_address_zip_code ) : false; // Zip Code
-						$ere_map_url_params .= ( ! empty( $ere_property_address_street ) ) ? '(' . urlencode( $ere_property_address_street ) . ')' . '+' : false; // Street Address
+						$ere_map_url_params .= ( ! empty( $ere_property_address_street ) ) ? urlencode( $ere_property_address_street ) . '+' : false; // Street Address
 						$ere_map_url_params .= ( empty( $ere_map_url_params ) ) ? $post->post_title : false; // Used to ensure marker is displayed correctly
 						$ere_map_url_params .= '@' . $ere_property_address_lat_long;
 					}
 					else {
-						$ere_map_url_params .= ( ! empty( $ere_property_address_street ) ) ? '(' . urlencode( $ere_property_address_street ) . ')+' : false; // Street Address
+						$ere_map_url_params .= ( ! empty( $ere_property_address_street ) ) ? urlencode( $ere_property_address_street ) . '+' : false; // Street Address
 						$ere_map_url_params .= ( ! empty( $ere_property_address_city ) ) ? urlencode( $ere_property_address_city ) . '+,' : false; // City
 						$ere_map_url_params .= ( ! empty( $ere_property_address_state ) ) ? urlencode( $ere_property_address_state ) . '+' : false; // State
 						$ere_map_url_params .= ( ! empty( $ere_property_address_zip_code ) ) ? urlencode( $ere_property_address_zip_code ) : false; // Zip Code
